@@ -30,7 +30,6 @@ function calcolaPrezzo() {
     }
 
     // Rappresento il risultato nel DOM
-    
     const risultato = document.getElementById("risultato");
     risultato.innerHTML = `
         <table class="table">
@@ -55,3 +54,5 @@ function calcolaPrezzo() {
         </table>
     `;
 }
+const genera = document.getElementById('genera')
+genera.addEventListener('click', () => calcolaPrezzo())
